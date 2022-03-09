@@ -34,6 +34,7 @@
         z-index: 20;
         box-shadow: 0 1rem 3rem rgba(#000,.3);
         @media only screen and (max-width:$rp-medimum) {
+            width: 100%;
             grid-row: 1 / -1;
             grid-column: 4 / 7;
         }

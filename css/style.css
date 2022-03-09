@@ -445,6 +445,7 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
   @media only screen and (max-width: 50em) {
     .story__img--2 {
+      width: 100%;
       grid-row: 1 / -1;
       grid-column: 4 / 7; } }
 
