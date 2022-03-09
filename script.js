@@ -123,3 +123,29 @@ btnSeach.addEventListener('click', ()=> {
     btnSeach.classList.toggle('actives');
     inputSeach.focus();
 })
+
+let userScroll = false;
+window.onscroll = function (e) {
+    userScroll = true;
+    if (userScroll) nav.forEach((cur) => cur.classList.remove("visible"));
+};
+
+// section
+const allSection = document.querySelectorAll(".section");
+const sectionAffect = function (entries, obv) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove("section--hidden");
+    obv.unobserve(entry.target);
+    console.log(entry.target);
+};
+
+const sectionObsever = new IntersectionObserver(sectionAffect, {
+    root: null,
+    threshold: 0.15,
+});
+
+allSection.forEach((section) => {
+    sectionObsever.observe(section);
+    section.classList.add("section--hidden");
+});
