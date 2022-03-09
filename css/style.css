@@ -446,7 +446,7 @@ body {
   @media only screen and (max-width: 50em) {
     .story__img--2 {
       grid-row: 1 / -1;
-      grid-column: 2 / 5; } }
+      grid-column: 4 / 7; } }
 
 .story__content {
   grid-column: col-start 5 / full-end;
