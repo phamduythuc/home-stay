@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and(max-width: $rp-hight) {
+        font-size: 50%;
+    }
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: $font-defaul;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: $color-grey-light-1;
+}
+.container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(9, [col-start] minmax(min-content, 145rem)[col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-rows: 100vh repeat(7, min-content);
+
+}
+
+
+.button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: $color-primary;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 0.2s linear;
+  }
+  .button:hover {
+    transform: rotateY(-15deg);
+  }

@@ -1,0 +1,19 @@
+.video {
+    grid-column: center-start / center-end;
+    margin: 5rem 0 15rem 0;
+    display: grid;
+    justify-items: center;
+
+    &-home {
+        width: 1024px;
+        @media only screen and (max-width:$rp-large) {
+            width: 720px;
+        }
+        @media only screen and (max-width:$rp-medimum) {
+            width: 680px;
+        }
+        @media only screen and (max-width:$rp-small) {
+            width: 500px;
+        }
+    }
+}

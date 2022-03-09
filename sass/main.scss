@@ -1,0 +1,24 @@
+@import "absstracts/variables";
+@import "absstracts/mixins";
+@import "absstracts/function";
+// base 
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+// component  layout
+@import "component/layout/header";
+@import "component/layout/navigation";
+@import "component/layout/grid";
+@import "component/layout/footer";
+
+@import "component/feature";
+@import "component/video";
+@import "component/story";
+@import "component/expending";
+@import "component/home";
+@import "component/libary";
+@import "component/rating";
+
+
+

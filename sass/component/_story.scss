@@ -1,0 +1,57 @@
+.story {
+  
+
+    &__pitures {
+        grid-column: full-start / col-end 4;
+
+        background-image: linear-gradient(to right bottom, rgba(#a9db4c, .3), rgba(#60fa6d, .5)) ,url(../../img/nature-1.jpg)  ;
+        
+        background-size: cover;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+
+        @media only screen and (max-width:$rp-medimum) {
+           grid-column: 1 / -1;
+        }
+    }
+    &__img--1 {
+        width: 100%;
+        grid-column: 2 / 6;
+        grid-row: 2 / 6;
+        box-shadow: 0 1rem 3rem rgba(#000,.3);
+        @media only screen and (max-width:$rp-medimum) {
+            grid-row: 2 / 6;
+            grid-column: 1 / 5;
+        }
+    }
+    &__img--2 {
+        width: 115%;
+        grid-column: 4 / 7;
+        grid-row: 4 / 6;
+        z-index: 20;
+        box-shadow: 0 1rem 3rem rgba(#000,.3);
+        @media only screen and (max-width:$rp-medimum) {
+            grid-row: 1 / -1;
+        }
+    }
+    &__content {
+        grid-column: col-start 5 / full-end;
+        padding: 6rem 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        @media only screen and (max-width:$rp-medimum) {
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;
+            padding: 6rem 20vw;
+         }
+    }
+    &__text {
+        font-size: $font-medimum;
+        font-style: italic;
+    }
+}

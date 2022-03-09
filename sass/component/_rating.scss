@@ -1,0 +1,80 @@
+.rating {
+    grid-column: center-start / center-end;
+    margin: 5rem 0 15rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.testimonial-box {
+
+    padding: 6rem 5rem 3rem 5rem;
+    max-width: 65rem;
+    background-color: #fff;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 4rem rgba(#000, .3);
+    @media only screen and (max-width:$rp-medimum) {
+       padding: 4rem 3rem 1rem 3rem;
+     }
+
+    &__timeline {
+        height: 0.4rem;
+        width: 100%;
+        background-color: $color-primary;
+        margin-bottom: 4rem;
+        animation: animate 6s linear infinite;
+        transform-origin:left ;
+
+    }
+    @keyframes animate {
+        0% {
+            transform: scaleX(0);
+        }
+    }
+    &__item--1,
+    &__item--2 {
+        font-size: 6rem;
+        position: absolute;
+        color: rgba($color-primary,.5);
+    }
+    &__item--1 {
+        top: 5%;
+        left: 3%;
+    }
+    &__item--2 {
+        top: 5%;
+        right: 3%;
+    }
+    &__text {
+        font-size: $font-defaul;
+        font-style: italic;
+        line-height: 1.6;
+        width: 80%;
+        margin: 0 auto;
+        color: $color-grey-drak-1;
+    }
+    &__user {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    &__details {
+        margin-left: 2rem;
+    }
+    &__h4 {
+        font-size: 2rem;
+        color: $color-primary-drak;
+    }
+    &__role {
+        font-size: $font-medimum;
+        color: $color-primary-light;
+    }
+}

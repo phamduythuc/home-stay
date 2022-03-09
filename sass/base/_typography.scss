@@ -1,0 +1,38 @@
+
+
+
+.heading-h1 {
+    font-family: 'Atma', cursive;
+    font-size: 4rem;
+    font-style: italic;
+    width: 90%;
+    line-height: 1.2;
+    font-weight: 500;
+
+    &--light {
+        text-align: center;
+        color: #fff;
+    }
+}
+.heading-h2 {
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+    color: $color-primary-drak;
+}
+.heading-h3 {
+    font-size: $font-defaul;
+    &--light {
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 500;
+    }
+
+}
+.heading-h4 {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1;
+    color: $color-grey-drak-2;
+    font-family: 'Atma', cursive;
+}
