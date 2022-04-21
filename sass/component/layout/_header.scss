@@ -228,8 +228,8 @@
     &__input {
         padding: 1rem;
         border: none;
-        height: 5rem;
         width: 5rem;
+        height: 5rem;
         transition: all .5s ease;
         font-size: $font-defaul;
      &:focus {
@@ -251,11 +251,12 @@
         transition: all .5s ease;
     }
     .active{
-        width: 30rem;
+        width: 25rem;
+
     }
     .actives{
         
-        transform: translateX(25rem);
+        transform: translateX(20rem);
     }
 }
 .customs {

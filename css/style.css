@@ -289,8 +289,8 @@ body {
   .search__input {
     padding: 1rem;
     border: none;
-    height: 5rem;
     width: 5rem;
+    height: 5rem;
     transition: all .5s ease;
     font-size: 1.6rem; }
     .search__input:focus {
@@ -308,9 +308,9 @@ body {
     width: 5rem;
     transition: all .5s ease; }
   .search .active {
-    width: 30rem; }
+    width: 25rem; }
   .search .actives {
-    transform: translateX(25rem); }
+    transform: translateX(20rem); }
 
 .customs {
   display: none; }
